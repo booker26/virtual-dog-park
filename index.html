@@ -68,6 +68,50 @@
       </article>
 
     </section>
+
+    <section class="my-dog" id="my-dog">
+      <h2>My Virtual Dog</h2>
+      <p class="section-note">Adopt a dog and take care of it!</p>
+
+      <form id="adopt-form" class="adopt-form">
+        <div class="field">
+          <label for="breed-select">Choose a breed:</label>
+          <select id="breed-select" name="breed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="dog-name">Name your dog:</label>
+          <input type="text" id="dog-name" name="dog-name" maxlength="20" placeholder="e.g. Biscuit">
+        </div>
+
+        <button type="submit" class="adopt-btn">Adopt 🐾</button>
+      </form>
+
+      <p id="dog-message" class="message" role="status"></p>
+
+      <article id="dog-card" class="dog-card" hidden>
+        <img id="dog-image" class="breed-art" width="240" height="220" alt="">
+        <div class="dog-info">
+          <h3>Your Dog</h3>
+          <ul class="dog-stats">
+            <li><strong>Name:</strong> <span id="stat-name"></span></li>
+            <li><strong>Breed:</strong> <span id="stat-breed"></span></li>
+            <li><strong>Day:</strong> <span id="stat-day"></span></li>
+            <li><strong>Stage:</strong> <span id="stat-stage"></span></li>
+            <li><strong>Happiness:</strong> <span id="stat-happiness"></span> / 100</li>
+          </ul>
+          <div class="care-buttons">
+            <button type="button" id="feed-btn" class="care-btn">Feed 🍖</button>
+            <button type="button" id="play-btn" class="care-btn">Play 🎾</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
   </main>
 
   <footer class="site-footer">
