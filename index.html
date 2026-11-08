@@ -104,9 +104,20 @@
             <li><strong>Stage:</strong> <span id="stat-stage"></span></li>
             <li><strong>Happiness:</strong> <span id="stat-happiness"></span> / 100</li>
           </ul>
+
+          <!-- Growth bar: visible sign of how grown-up the dog is -->
+          <div class="growth">
+            <span class="growth-label">Growth</span>
+            <div class="growth-bar"><div class="growth-fill" id="growth-fill"></div></div>
+          </div>
+
           <div class="care-buttons">
             <button type="button" id="feed-btn" class="care-btn">Feed 🍖</button>
             <button type="button" id="play-btn" class="care-btn">Play 🎾</button>
+            <button type="button" id="nextday-btn" class="care-btn next-day">Next Day ☀️</button>
+          </div>
+          <div class="care-buttons">
+            <button type="button" id="reset-btn" class="reset-btn">Start Over ♻️</button>
           </div>
         </div>
       </article>
