@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Illustration of a Poodle">
+  <!-- Background -->
+  <rect width="240" height="220" fill="#eef4fb"/>
+
+  <!-- Curly coat: a ring of small circles around the head -->
+  <g fill="#f2ead9" stroke="#d9cdb4" stroke-width="1.5">
+    <circle cx="120" cy="44" r="16"/>
+    <circle cx="88"  cy="52" r="16"/>
+    <circle cx="152" cy="52" r="16"/>
+    <circle cx="64"  cy="78" r="16"/>
+    <circle cx="176" cy="78" r="16"/>
+    <circle cx="56"  cy="112" r="16"/>
+    <circle cx="184" cy="112" r="16"/>
+    <circle cx="68"  cy="146" r="16"/>
+    <circle cx="172" cy="146" r="16"/>
+  </g>
+
+  <!-- Face (cream) -->
+  <circle cx="120" cy="106" r="50" fill="#fbf6ec"/>
+
+  <!-- Top knot curl -->
+  <circle cx="120" cy="50" r="18" fill="#fbf6ec" stroke="#d9cdb4" stroke-width="1.5"/>
+
+  <!-- Eyes -->
+  <circle cx="104" cy="100" r="6.5" fill="#2b2b2b"/>
+  <circle cx="136" cy="100" r="6.5" fill="#2b2b2b"/>
+
+  <!-- Narrow muzzle -->
+  <ellipse cx="120" cy="124" rx="22" ry="18" fill="#fbf6ec"/>
+
+  <!-- Nose -->
+  <ellipse cx="120" cy="118" rx="9" ry="7" fill="#2b2b2b"/>
+
+  <!-- Mouth -->
+  <path d="M120 125 v6 M120 131 q-10 7 -18 2 M120 131 q10 7 18 2" stroke="#5b4636" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Body with curly chest puff -->
+  <path d="M72 202 q-6 -50 48 -50 q54 0 48 50 Z" fill="#f2ead9" stroke="#d9cdb4" stroke-width="1.5"/>
+  <g fill="#fbf6ec" stroke="#d9cdb4" stroke-width="1.5">
+    <circle cx="104" cy="172" r="14"/>
+    <circle cx="136" cy="172" r="14"/>
+    <circle cx="120" cy="186" r="14"/>
+  </g>
+
+  <!-- Curly tail pom -->
+  <circle cx="190" cy="170" r="14" fill="#f2ead9" stroke="#d9cdb4" stroke-width="1.5"/>
+</svg>
