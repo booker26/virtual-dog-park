@@ -1,3 +1,145 @@
+/* =========================================
+   Virtual Dog Park - stylesheet
+   Plain CSS, no frameworks.
+   ========================================= */
+
+/* Reset a few defaults so spacing is predictable */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base page styles */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #fdfaf4;
+  padding: 0 16px;
+}
+
+/* Limit how wide the content gets so it is easy to read */
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  text-align: center;
+  padding: 32px 0 16px;
+  background-color: #fff;
+  border-bottom: 4px solid #f4c95d;
+  border-radius: 0 0 16px 16px;
+  margin-top: 0;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  color: #5b4636;
+}
+
+.welcome {
+  font-size: 1.1rem;
+  color: #8a7a66;
+  margin-top: 8px;
+}
+
+/* ---------- Intro ---------- */
+.intro {
+  padding: 24px 0 8px;
+}
+
+.intro h2,
+.encyclopedia h2 {
+  color: #5b4636;
+  margin-bottom: 8px;
+}
+
+.intro p {
+  font-size: 1.05rem;
+}
+
+/* ---------- Encyclopedia ---------- */
+.section-note {
+  color: #8a7a66;
+  margin-bottom: 20px;
+}
+
+/* Each breed is a card */
+.breed-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  border: 1px solid #eee2cc;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* The dog drawing (used by breed cards AND the adopted dog) */
+.breed-art {
+  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #fbf6ec;
+}
+
+.breed-info {
+  flex: 1;
+}
+
+.breed-info h3 {
+  color: #5b4636;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Notes list */
+.notes {
+  list-style: none;
+}
+
+.notes li {
+  margin-bottom: 10px;
+  padding-left: 14px;
+  border-left: 4px solid #f4c95d;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 24px 0 40px;
+  color: #8a7a66;
+  font-size: 0.95rem;
+}
+
+/* ---------- Responsive: phones ----------
+   On narrow screens, stack the image above the text. */
+@media (max-width: 600px) {
+  .breed-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .breed-art {
+    width: 180px;
+  }
+
+  .notes li {
+    text-align: left;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
 /* ---------- My Virtual Dog ---------- */
 .my-dog {
   padding: 8px 0 24px;
@@ -109,6 +251,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  /* Let the care buttons wrap so they never overflow a narrow screen */
+  .care-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
